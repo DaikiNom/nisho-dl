@@ -19,11 +19,15 @@ It is written in Python and uses the [yt-dlp](https://github.com/yt-dlp/yt-dlp) 
     ```bash
     pip install -r requirements.txt
     ```
-1. Get ffmpeg
+    If you want to install the packages yourself, install the following packages.
+    - yt-dlp
+    - pySimpleGUI
+    - pyinstaller
+2. Get ffmpeg
    1. Download or build ffmpeg.
    2. Create a folder named `ffmpeg` in the same directory as the `app.py` file.
    3. Move the `ffmpeg.exe` file to the `ffmpeg` folder.
-2. Build
+3. Build
     ```bash
     pyinstaller app.py -w -n NishoDownloader -i icon.png --add-data "./ffmpeg;./ffmpeg"
     ```
