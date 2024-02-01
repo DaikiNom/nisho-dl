@@ -20,14 +20,13 @@ It is written in Python and uses the [yt-dlp](https://github.com/yt-dlp/yt-dlp) 
     pip install -r requirements.txt
     ```
 1. Get ffmpeg
-   1. Download ffmpeg from [here](https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-full.7z).
-   2. Extract the downloaded file.
-   3. Move the `bin` folder to the root directory of this repository.
-   4. Rename the `bin` folder to `ffmpeg`.
-1. Build
+   1. Download or build ffmpeg.
+   2. Create a folder named `ffmpeg` in the same directory as the `app.py` file.
+   3. Move the `ffmpeg.exe` file to the `ffmpeg` folder.
+2. Build
     ```bash
-    pyinstaller app.py --onefile -w -n NishoDownloader -i icon.png --add-data "./ffmpeg;./ffmpeg"
+    pyinstaller app.py -w -n NishoDownloader -i icon.png --add-data "./ffmpeg;./ffmpeg"
     ```
 
 ## License
-This software is released under the AGPL-v3.0, see LICENSE.
+This software is released under the GPL-v3.0, see LICENSE.
