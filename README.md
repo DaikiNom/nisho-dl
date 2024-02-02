@@ -29,7 +29,7 @@ It is written in Python and uses the [yt-dlp](https://github.com/yt-dlp/yt-dlp) 
    3. Move the `ffmpeg.exe` file to the `ffmpeg` folder.
 3. Build
     ```bash
-    pyinstaller app.py -w -n NishoDownloader -i icon.png --add-data "./ffmpeg;./ffmpeg"
+    pyinstaller app.py -w -n NishoDownloader -i icon.ico --add-data "./ffmpeg;./ffmpeg"
     ```
 
 ## License
